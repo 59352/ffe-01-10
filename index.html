@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = [
+            {name: 'Ihor', dateOfBirth: '1986'},
+            {name: 'Alex', dateOfBirth: '1994'},
+            {name: 'Yura', dateOfBirth: '1988'},
+            {name: 'Anya', dateOfBirth: '2000'},
+            ];
+        const HumanAge = function(data) {
+            this.name = data.name;
+            this.dateOfBirth = data.dateOfBirth;
+            this.getAge = () => {
+                return `${data.name} ${2019 - data.dateOfBirth}`;
+            }
+        }
+        const result = new Age(person[0]);
+        console.log(result);
+        for( let payload of person ) {
+            const result = new Age(payload);
+            console.log(result);
+        }
+
+        // const people = [
+        //                 {name: 'alex1', surname: 'litv1'},
+        //                 {name: 'alex2', surname: 'litv2'},
+        //                 {name: 'alex3', surname: 'litv3'},
+                    
+        //             ]
+        //             const Human = function(data) {
+        //                 this.name = data.name;
+        //                 this.surname = data.surname;
+        //                 this.getfullname = () => {
+        //                     return `${data.name} ${data.surname}`;
+        //                 }
+        //             }
+
+        //             const obj = new Human(people[0]);
+        //             console.log(obj);
+        //             for( let payload of people) {
+        //                 const obj = new Human(payload);
+        //                 console.log(obj);
+        //             }
+
+    </script>
+</body>
+</html>
+массив содержит в себе дату рождения и имя.(много людей)
+для этого массива сделать функцию конструктор, которая создаст соответствующий обьект,
+ который  будет метод getAge. на основе которого нужно будет получить возраст, 
+ работать с обьектом date, 
